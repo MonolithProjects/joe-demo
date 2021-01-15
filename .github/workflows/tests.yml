@@ -1,0 +1,13 @@
+name: Testy
+on: [push, pull_request]
+
+jobs:
+  python_lint:
+    name: Moje testy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      
+      - name: Spust moj program
+        run: python3 program.py
+        shell: bash
