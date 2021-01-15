@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
+
+      - uses: actions/setup-python@v1
+      - uses: whynothugo/python-linting@master
       
       - name: Spust moj program
         run: python3 program.py
