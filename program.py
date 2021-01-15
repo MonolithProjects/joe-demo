@@ -1,1 +1,1 @@
-print("Nazdaar")
+prnt("Nazdaar")
